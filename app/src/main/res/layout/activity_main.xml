@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Danh bạ"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#0000FF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.066"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="HOÀNG THỊ CẨM VÂN_1811505310351"
+            android:textColor="#FF4000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            android:id="@+id/tabLayout">
+
+        </com.google.android.material.tabs.TabLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewpager">
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+        <EditText
+            android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:drawablePadding="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Nhập từ khóa"
+            android:inputType="text"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp">
+        <ListView
+            android:id="@+id/listProduct"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:drawableTop="@drawable/ic_baseline_data_usage_24"
+            android:background="@drawable/button_footer"
+            android:text="Tất cả"
+            />
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:drawableTop="@drawable/ic_baseline_call_24"
+            android:background="@drawable/button_footer"
+            android:text="Gần đây"/>
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:drawableTop="@drawable/ic_baseline_favorite_24"
+            android:background="@drawable/button_footer"
+            android:text="Yêu thích"/>
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:drawableTop="@drawable/ic_baseline_group_24"
+            android:background="@drawable/button_footer"
+            android:text="Nhóm"/>
+
+    </LinearLayout>
+
+</LinearLayout>
